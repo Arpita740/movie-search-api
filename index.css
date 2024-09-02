@@ -1,0 +1,100 @@
+.loader {
+    width: 120px;
+    height: 20px;
+    -webkit-mask: radial-gradient(circle closest-side,#000 94%,#0000) left/20% 100%;
+    background: linear-gradient(#000 0 0) left/0% 100% no-repeat #ddd;
+    animation: l17 2s infinite steps(6);
+}
+@keyframes l17 {
+    100% {background-size:120% 100%}
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+body {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 10px;
+    padding: 20px;
+}
+
+.search input {
+    height: 50px;
+    margin: 30px;
+    width: 30%;
+    background-color: whitesmoke;
+    font-size: medium;
+    padding: 10px;
+}
+
+.search button {
+    height: 50px;
+    width: 5%;
+    background-color: rgb(218, 14, 14);
+    color: white;
+    cursor: pointer;
+}
+
+.search button:active {
+    background-color: red;
+}
+
+#movie-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding: 20px;
+}
+
+.card {
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 10px 20px rgba(196, 13, 13, 0.495);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(234, 52, 52, 0.451);
+}
+
+.card img {
+    width: 100%;
+    max-height: 330px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.card h4, .card h5 {
+    margin: 8px;
+    color: #fcfbfb;
+    text-align: center;
+    padding: 5px 5px;
+}
+
+.card h5 {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.card h4 {
+    font-size: 1.3rem;
+}
+
+.card h6 {
+    color: #9c9999;
+    text-align: center;
+    padding: 5px 5px;
+}
