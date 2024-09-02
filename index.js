@@ -7,7 +7,7 @@ async function getMovies(e) {
         movieList.innerHTML = `<div class="loader"></div>`;
 
         await new Promise(resolve => setTimeout(resolve, 500));
-
+ 
         let response = await fetch(`https://www.omdbapi.com/?s=${search}&apikey=47ec7f2b`);
         let data = await response.json();
         let movies = data.Search;
